@@ -1,0 +1,49 @@
+/* CSS eksternal dasar untuk sistem reservasi studio musik */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #222; }
+.container { width: 960px; margin: 30px auto; background: #fff; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+header { margin-bottom: 20px; }
+nav a { margin-right: 10px; color: #007bff; text-decoration: none; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 8px 10px; border: 1px solid #e9ecef; }
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9999px; /* pill */
+  border: none;
+  cursor: pointer;
+  transition: background .12s ease, transform .08s ease, box-shadow .12s ease;
+  box-shadow: none;
+}
+
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 12px rgba(0,0,0,0.06); }
+.btn:active { transform: translateY(0); box-shadow: none; }
+.btn:focus { outline: none; box-shadow: 0 0 0 4px rgba(0,123,255,0.12); }
+
+.btn-outline {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid rgba(0,123,255,0.25);
+  border-radius: 9999px;
+  padding: 6px 12px;
+}
+
+.btn-danger { background: #dc3545; }
+.form-group { margin-bottom: 10px; }
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+input[type="text"], input[type="password"], input[type="date"], input[type="time"], textarea, select { width: 100%; padding: 8px; border: 1px solid #ced4da; border-radius: 4px; }
+img.thumb { max-width: 160px; height: auto; display: block; }
+.footer { text-align: center; color: #666; margin-top: 20px; }
+
+/* Modal styles */
+.modal-backdrop { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); opacity: 0; pointer-events: none; transition: opacity .18s ease; z-index: 1200; }
+.modal-backdrop.show { opacity: 1; pointer-events: auto; }
+.modal { background: #fff; padding: 18px; border-radius: 8px; width: 420px; max-width: 92%; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+.modal h3 { margin-top: 0; margin-bottom: 8px; }
+.modal .form-row { display:flex; gap:12px; }
+.modal .form-group { margin-bottom: 10px; flex:1; }
+.modal-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:8px; }
+.modal .btn { min-width: 80px; }
+@media (max-width:520px){ .modal { width: 92%; } .modal .form-row{ flex-direction:column; } }
