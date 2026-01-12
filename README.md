@@ -13,7 +13,7 @@ Catatan:
 - Judul harus spesifik dan menggambarkan aplikasi web.
 - Contoh: "Aplikasi Reservasi Studio Musik Berbasis Web dengan PHP dan MySQL".
 
----
+
 
 ## C. LATAR BELAKANG
 Jelaskan secara singkat:
@@ -186,14 +186,11 @@ SELECT * FROM bookings WHERE studio_id = 1 ORDER BY booking_date, start_time;
 - Menambahkan `updateStatusBooking.php` untuk meng-handle aksi admin approve/reject secara aman.
 - Menambahkan `cetakLaporan.php` untuk print & CSV export.
 
----
 
 ## Lisensi & Kontak
 - Proyek ini bersifat contoh/sederhana untuk demo. Untuk produksi, tinjau dan tambahkan lisensi.
 - Jika ingin bantuan lanjutan (fitur baru, integrasi email, atau deploy), hubungi: **(tambahkan kontak Anda di sini)**
 
----
 
-Terima kasih! 🎶
-Jika Anda mau, saya bisa juga menambahkan bagian "Quickstart (one-liner)" untuk menjalankan project pada Laragon, atau membuat skrip setup otomatis untuk Windows. Beritahu saya yang Anda ingin tambahkan di README ini—saya akan perbarui segera.#   u a s - p w d  
+ 
  
